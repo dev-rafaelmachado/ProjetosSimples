@@ -2,8 +2,10 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-    
-    background-color: #282a36;
+}
+
+body{
+  background-color: #282a36;
 }
   
 main{
@@ -26,21 +28,60 @@ main{
   
 .visor{
     width: 505px;
-    height: 180px;
-  
+    height: 220px;
     background: #404040;
     border-radius: 10px 10px 0px 0px;
 }
 
 .teclado{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    grid-gap:5px;
+    padding: 5px;
     width:100%;
     height: 100%;
     border-radius: 0px 0px 10px 10px;
     background-color: #FEFFFE;
   }
-  
-  
 
+.base button{
+  border:none;
+  color: white;
+  font-size: 46px;
+  transition: all 0.3s ease 0s;
+}
+
+.base button:hover{
+  filter: brightness(89%);
+}
+  
+.boxAC{
+  grid-column-start:1;
+  grid-column-end:3;
+  
+  background: #FF7037;
+  border-radius: 5px 0px 0px 5px;
+}
+.boxC{
+  background: #FF7037;
+}
+.boxOPR{
+  background: #FF5714;
+  border-radius: 0px 5px 5px 0px;
+}
+.boxNumEsq{
+  background: #AFAFAF;
+  border-radius: 5px 0px 0px 5px;
+}
+.boxNum{
+  background: #AFAFAF;
+}
+
+.box0{
+  grid-column-start:1;
+  grid-column-end:3;
+  
+  background: #757575;
+  border-radius: 5px 0px 0px 5px;
+}
