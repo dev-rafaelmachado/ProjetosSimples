@@ -9,36 +9,37 @@
     <main>
         <div class="base">
           <div class="visor">
-      
+            <span class="display"><p id="dsp"></p></span>
           </div>
           <div class="teclado">
-            <button class="boxAC"> AC </button>
-            <button class="boxC"> C </button>
-            <button class="boxOPR"> / </button>
+            <button onclick="" class="boxAC"> AC </button>
+            <button onclick="" class="boxC"> C </button>
+            <button onclick="" class="boxOPR"> / </button>
             
             
-            <button class="boxNumEsq"> 7 </button>
-            <button class="boxNum"> 8 </button>
-            <button class="boxNum"> 9 </button>
-            <button class="boxOPR"> * </button>
+            <button onclick="InserirNumber(7)" class="boxNumEsq"> 7 </button>
+            <button onclick="InserirNumber(8)" class="boxNum"> 8 </button>
+            <button onclick="InserirNumber(9)" class="boxNum"> 9 </button>
+            <button onclick="" class="boxOPR"> * </button>
             
-            <button class="boxNumEsq"> 4 </button>
-            <button class="boxNum"> 5 </button>
-            <button class="boxNum"> 6 </button>
-            <button class="boxOPR"> + </button>
+            <button onclick="InserirNumber(4)" class="boxNumEsq"> 4 </button>
+            <button onclick="InserirNumber(5)" class="boxNum"> 5 </button>
+            <button onclick="InserirNumber(6)" class="boxNum"> 6 </button>
+            <button onclick="" class="boxOPR"> + </button>
             
-            <button class="boxNumEsq"> 1 </button>
-            <button class="boxNum"> 2 </button>
-            <button class="boxNum"> 3 </button>
-            <button class="boxOPR"> - </button>
+            <button onclick="InserirNumber(1)" class="boxNumEsq"> 1 </button>
+            <button onclick="InserirNumber(2)" class="boxNum"> 2 </button>
+            <button onclick="InserirNumber(3)" class="boxNum"> 3 </button>
+            <button onclick="" class="boxOPR"> - </button>
             
-            <button class="box0"> 0 </button>
-            <button class="boxNum"> . </button>
-            <button class="boxOPR"> = </button>
+            <button onclick="InserirNumber(0)" class="box0"> 0 </button>
+            <button onclick="InserirNumber('.')" class="boxNum"> . </button>
+            <button onclick="RealizarOper('=')" class="boxOPR"> = </button>
             
          
           </div>
         </div>
       </main>
+      <script src="main.js"></script>
 </body>
 </html>
