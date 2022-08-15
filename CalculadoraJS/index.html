@@ -12,15 +12,15 @@
             <span class="display"><p id="dsp"></p></span>
           </div>
           <div class="teclado">
-            <button onclick="" class="boxAC"> AC </button>
-            <button onclick="" class="boxC"> C </button>
+            <button onclick="Clear('AC')" class="boxAC"> AC </button>
+            <button onclick="Clear('C')" class="boxC"> C </button>
             <button onclick="" class="boxOPR"> / </button>
             
             
             <button onclick="InserirNumber(7)" class="boxNumEsq"> 7 </button>
             <button onclick="InserirNumber(8)" class="boxNum"> 8 </button>
             <button onclick="InserirNumber(9)" class="boxNum"> 9 </button>
-            <button onclick="" class="boxOPR"> * </button>
+            <button onclick="RealizarOper('*')" class="boxOPR"> * </button>
             
             <button onclick="InserirNumber(4)" class="boxNumEsq"> 4 </button>
             <button onclick="InserirNumber(5)" class="boxNum"> 5 </button>
@@ -40,6 +40,6 @@
           </div>
         </div>
       </main>
-      <script src="main.js"></script>
+      <script src="main.js"> stats = false </script>
 </body>
 </html>
