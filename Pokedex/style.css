@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(198deg, rgba(28,209,224,1) 10%, rgba(205,104,213,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.fundo{
+    position: absolute;
+}
+.main{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.div-img{
+    position: absolute;
+    transform: translate(0%,-30%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 120px;
+    height: 120px;
+}
+#namePoke{
+    padding: 5px;
+    border: 1px rgba(0, 0, 0, 0.50) solid;
+    outline: none;
+    border-radius: 8px;
+}
