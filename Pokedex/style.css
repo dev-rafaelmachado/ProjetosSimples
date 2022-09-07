@@ -33,7 +33,7 @@ body{
 }
 #namePoke{
     position: absolute;
-    transform: translate(-60%,510%);
+    transform: translate(-60%,530%);
 
     width: 350px;
     height: 50px;
@@ -61,11 +61,11 @@ body{
 }
 .arrows{
     position: absolute;
-    transform: translate(-58%,700%);
+    transform: translate(-58%,560%);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:40px;
+    gap:7px;
 
 }
 
@@ -73,7 +73,7 @@ body{
 
 
     margin: 10px;
-    width: 120px;
+    width: 160px;
     padding: 8px;
     border: 2px solid #000;
     border-radius: 5px;
@@ -82,6 +82,16 @@ body{
     color: white;
     background-color: #444;
     box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+.ImgsTypes{
+    position: absolute;
+    transform: translate(-60%,300%);
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 10px;
+    
+
 }
 
 .IDpoke{
