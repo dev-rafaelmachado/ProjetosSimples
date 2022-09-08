@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body{
+    background: linear-gradient(198deg, rgba(34,175,195,1) 10%, rgba(47,47,47,1) 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: larger;
+}
+
+input{
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+
+    padding: 30px;
+    font-size: x-large;
+    color: white;
+
+    outline: none;
+    backdrop-filter: blur(24px) saturate(100%);
+    -webkit-backdrop-filter: blur(24px) saturate(100%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+input::placeholder{
+    color: rgb(228, 228, 228);
+}
+
