@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background: #2F2D2E;
+    font-family: 'Ubuntu', sans-serif;
+
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    display: flex;
+    margin: 1rem;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: 1s all ease;
+}
+.circle:before {
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    left: 17.5px;
+    top: -15px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: rgb(68, 53, 73);
+    border-radius: 2px;
+    display: inline-block;
+    border-bottom: 2px solid rgb(97, 81, 107);
+}
+.circle:after {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 30px;
+    position: absolute;
+    width: 70px;
+    height: 18.6666666667px;
+    border-bottom: solid #222 2px;
+    border-radius: 50%;
+}
+.circle:last-child::after {
+    content: '';
+    position: absolute;
+    border: none;
+}
+
+main{
+    height: 90vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main h2{
+    font-size: 48px;
+}
+
