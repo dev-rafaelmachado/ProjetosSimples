@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+:root{
+    --delay-animation: 0.8s;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -32,6 +35,7 @@ header{
     background: rgba(0, 0, 0, 0.3);
     position: relative;
     transition: 1s all ease;
+
 }
 .circle:before {
     position: absolute;
@@ -70,10 +74,139 @@ main{
     width: 100%;
 
     display: flex;
+    flex-direction: column;
+    gap: 40px;
     align-items: center;
     justify-content: center;
 }
-main h2{
-    font-size: 48px;
+main input{
+    opacity: 0;
+    width: 200px;
+    padding: 5px;
+    padding-left: 15px;
+    height: 40px;
+    border-radius: 8px;
+
+    outline: none;
+    font-size: 16px;
+    color: #999999;
+    animation: Tittle 0.7s 1s;
+    animation-fill-mode: forwards;
 }
 
+main h2{
+    font-size: 78px;
+    text-shadow: 0 0 50px white;
+    opacity: 0;
+    animation: Tittle 0.7s 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.red{
+    background: #ff1d158a;
+    animation: glow-1 var(--delay-animation) 1s infinite;
+}
+.yellow{
+    background: #ffbe0b88;
+    animation: glow-2 var(--delay-animation) 1s infinite;
+}
+.blue{
+    background: #3a85ff85;
+    animation: glow-3 var(--delay-animation) 1s infinite;
+}
+.green{
+    background: #8ed0817e;
+    animation: glow-4 var(--delay-animation) 1s infinite;
+}
+
+@keyframes glow-1 {
+    50%{
+        box-shadow: 0 0 80px 5px #FF1D15;
+        background-color: #FF1D15;
+    }
+    0%, 100%{
+        box-shadow: none;
+        background: #ff1d158a;
+    }
+}
+@keyframes glow-2 {
+    0%, 100%{
+        box-shadow: 0 0 80px 5px #FFBE0B;
+        background:#FFBE0B;
+    }
+    50%{
+        box-shadow: none;
+        background: #ffbe0b88;
+    }
+}
+@keyframes glow-3 {
+    50%{
+        box-shadow: 0 0 80px 5px #3A86FF;
+        background: #3A86FF;
+    }
+    0%, 100%{
+        box-shadow: none;
+        background: #3a85ff85;
+    }
+}
+@keyframes glow-4 {
+    0%, 100%{
+        box-shadow: 0 0 80px 5px #8ED081;
+        background:#8ED081;
+    }
+    50%{
+        box-shadow: none;
+        background: #8ed0817e;
+    }
+}
+
+@keyframes Tittle{
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+}
+
+@-webkit-keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+@keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+}
