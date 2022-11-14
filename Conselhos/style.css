@@ -10,7 +10,62 @@ body{
     justify-content: center;
 }
 
+.Text{
+    width: 100%;
+}
+
 #element{
-    font-size: large;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+}
+
+.buttons{
+    margin-top: -140;
+    width: 30%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons svg:last-child{
+    margin-top: 32;
+}
+
+.buttons svg{
+    transition: 0.3s;
+}
+.buttons svg:first-child:hover{
+    transform: rotate(30deg);
+}
+.buttons svg:last-child:hover{
+    transform: scale(1.13);
+}
+
+.animation{
+    animation: click 3s 1 ease forwards;
+}
+
+@keyframes click {
+    0%  {
+        background: blue;
+    }
+    100%{
+        background: white;
+    }
 }
