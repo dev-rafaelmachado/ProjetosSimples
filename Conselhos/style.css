@@ -56,16 +56,3 @@ main{
 .buttons svg:last-child:hover{
     transform: scale(1.13);
 }
-
-.animation{
-    animation: click 3s 1 ease forwards;
-}
-
-@keyframes click {
-    0%  {
-        background: blue;
-    }
-    100%{
-        background: white;
-    }
-}
