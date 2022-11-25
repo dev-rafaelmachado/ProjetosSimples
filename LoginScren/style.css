@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+body{
+    --color1: #191a21;
+    --color2: #282a36;
+    --color3: #21222c;
+    --color4: #191a21;
+    --text: white;
+
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+
+main{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color1);
+}
+
+section{
+    width: 85%;
+    height: 85%;
+    background: var(--color2);
+    border-radius: 1rem;
+
+    display: flex;
+}
+
+.img{
+    height: 100%;
+    width: 50%;
+}
+
+.form{
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.form > .card{
+    width: 70%;
+    height: 600;
+    background: var(--color3);
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form > .card > h2{
+    color:var(--text);
+    font-family: 'Lato',sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.inputs{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form > .card > .inputs span{
+    width: 75%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: var(--color4);
+    border-radius: 1rem;
+}
+
+.form > .card > .inputs input{
+    width: 80%;
+    height: 100%;
+
+    background: none;
+    border: none;
+    outline: none;
+
+    color: var(--text);
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 0px 20px 0px 20px;
+}
+
+.form > .card > .inputs svg{
+    width: 35;
+    height: 35;
+    fill: var(--text);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form > .card > .inputs path{
+    transform: translate(6px, 6px);
+}
+
+/* ^ Toogle */
+
+.toggle-switch {
+    position: relative;
+    width: 200;
+    transform: scale(0.5);
+    margin-bottom: 50;
+    border: none;
+    outline: none;
+}
+      
+.toggle-switch  label {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: var(--dark);
+    border-radius: 50px;
+    cursor: pointer;
+}
+      
+.toggle-switch  input {
+    position: absolute;
+    display: none;
+}
+      
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+}
+      
+.toggle-switch input:checked ~ .slider {
+    background-color: var(--light);
+}
+      
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    width: 75px;
+    height: 75px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    box-shadow: inset 28px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    transition: 0.3s;
+}
+      
+.toggle-switch input:checked ~ .slider::before {
+    transform: translateX(95px);
+    background-color: var(--dark);
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
