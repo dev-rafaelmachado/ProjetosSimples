@@ -9,6 +9,7 @@
 body{
     background: #24283b;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -124,7 +125,7 @@ section h3{
     background-color: #3e3575;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
     body{
         height: 100%;
         width: 100%;
@@ -145,7 +146,7 @@ section h3{
         width: 100%;
     }
     .card{
-        width: 80%;
+        width: 90%;
         height: 30%;
     }
     .card h2{
@@ -156,10 +157,8 @@ section h3{
         font-size: 4rem;
     }
     #sair{
-    bottom: 0;
-    right: auto;
-    width: 370;
-    height: 100;
+    position: absolute;
+    top: 0;
     }
     .c1{
         background: #60efbc;
