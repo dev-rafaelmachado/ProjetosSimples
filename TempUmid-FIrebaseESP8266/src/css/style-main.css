@@ -124,7 +124,7 @@ section h3{
     background-color: #3e3575;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
     body{
         height: 100%;
         width: 100%;
@@ -160,5 +160,17 @@ section h3{
     right: auto;
     width: 370;
     height: 100;
+    }
+    .c1{
+        background: #60efbc;
+    }
+    .c2{
+        background: #2E86AB;
+    }
+    .c3{
+        background: #F24236; 
+    }
+    .c4{
+        background: #3E8914; 
     }
 }
