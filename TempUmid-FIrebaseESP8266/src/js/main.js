@@ -10,6 +10,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig); // ! Inciando o firebaseAPP
 const database = firebase.database();
 const main = document.querySelector("main");
+const sair = document.querySelector("#sair");
 
 // & Função para COuntar a quantidade de elementos de um objeto do FB
 function countElements_FB(p_element) {
@@ -104,29 +105,19 @@ const carreagarCards = (p_section, p_quant) => {
 const atualizarDados = (p_section, p_gl, p_valor) => {
   document
     .querySelector("." + p_section)
-    .querySelector(".gl" + p_gl).textContent = p_valor;
+    .querySelector(".gl" + p_gl).textContent = p_valor +"ºC";
 };
 
-{
-  /* <section>
-<h3>Recanto Verde 1</h3>
-<div class="cards">
-  <div class="card c1">
-    <h2>Geladeira 1</h2>
-    <p id="temp"></p>
-  </div>
-  <div class="card c1">
-    <h2>Geladeira 2</h2>
-    <p id="temp"></p>
-  </div>
-  <div class="card c1">
-    <h2>Geladeira 3</h2>
-    <p id="temp"></p>
-  </div>
-  <div class="card c1">
-    <h2>Geladeira 4</h2>
-    <p id="temp"></p>
-  </div>
-</div>
-</section> */
-}
+
+sair.addEventListener("click", (event) => {
+  event.preventDefault();
+  firebase
+    .auth()
+    .signOut()
+    .then(() => {
+      window.location.href = "login.html";
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
