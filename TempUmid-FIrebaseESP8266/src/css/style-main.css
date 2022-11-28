@@ -145,7 +145,7 @@ section h3{
     .cards{
         width: 100%;
     }
-    .card{
+    .card{ 
         width: 90%;
         height: 30%;
     }
@@ -157,8 +157,9 @@ section h3{
         font-size: 4rem;
     }
     #sair{
-    position: absolute;
+    position: inherit;
     top: 0;
+    right: 0;
     }
     .c1{
         background: #60efbc;
