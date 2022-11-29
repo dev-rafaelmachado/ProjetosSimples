@@ -12,9 +12,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    height: 100%;
-    width: 100%;
 }
 
 main{
@@ -126,51 +123,36 @@ section h3{
 }
 
 @media screen and (max-width: 1000px){
-    body{
-        height: 100%;
+
+    .card{
         width: 100%;
-    }
-    main{
-        height: 100%;
-        width: 100%;
-        gap: 4rem ;
+        height: 400;
+        border-radius: 0px;
+        /* border-radius: 0px 1rem 1rem 0rem; */
     }
     section{
-        margin-top: 40;
         width: 100%;
     }
     section h3{
-        font-size: 4rem;
+        font-size: 3rem;
+        margin-top: 0%;
     }
-    .cards{
-        width: 100%;
+    .c1{
+        margin-top: 5%;
     }
-    .card{ 
-        width: 90%;
-        height: 30%;
+    .c4{
+        margin-bottom: 15%;
+    }
+    .card:hover{
+        transform: scale(1.0);
     }
     .card h2{
-        font-size: 6rem;
+        font-size: 3rem;
+        font-weight: 500;
     }
     
     .card p{
-        font-size: 4rem;
-    }
-    #sair{
-    position: inherit;
-    top: 0;
-    right: 0;
-    }
-    .c1{
-        background: #60efbc;
-    }
-    .c2{
-        background: #2E86AB;
-    }
-    .c3{
-        background: #F24236; 
-    }
-    .c4{
-        background: #3E8914; 
+        font-size: 2rem;
+        font-weight: 300;
     }
 }
