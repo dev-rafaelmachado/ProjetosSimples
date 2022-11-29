@@ -125,7 +125,7 @@ section h3{
     background-color: #3e3575;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
     body{
         height: 100%;
         width: 100%;
