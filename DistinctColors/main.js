@@ -1,4 +1,5 @@
 const e_main = document.querySelector("#main");
+const e_score = document.querySelector("#score");
 var acertos = 0;
 
 function renderizarElementos(dificult) {
@@ -9,7 +10,7 @@ function renderizarElementos(dificult) {
     Math.floor(Math.random() * 226),
   ];
   const elementDif = Math.floor(Math.random() * 9);
-  
+
   for (let index = 0; index < 9; index++) {
     let element = document.createElement("button");
     element.className = "color-card";
@@ -28,6 +29,7 @@ function renderizarElementos(dificult) {
     element.onclick = () => {
       if (index == elementDif) {
         acertos++;
+        e_score.innerHTML = "Score: " + acertos
         renderizarElementos(dificult - 1);
       } else {
         renderGameOver();
