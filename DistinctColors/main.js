@@ -121,6 +121,8 @@ for (const key of e_difficulty.childNodes) {
     changeDificult(key);
     acertos = 0;
     e_score.innerHTML = "Score: " + acertos;
+    record = 0;
+    e_record.innerHTML = "Recorde: " + record;
     renderizarElementos(difficults[nowDifficulty]);
   });
 }
