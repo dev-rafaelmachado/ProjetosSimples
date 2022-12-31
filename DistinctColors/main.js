@@ -3,7 +3,12 @@ const e_score = document.querySelector("#score");
 const e_record = document.querySelector("#record");
 const e_difficulty = document.querySelector(".difficulty");
 var acertos = 0;
-var record = 0;
+var record = {
+  easy: 0,
+  medium: 0,
+  hard: 0,
+  rise: 0,
+};
 var nowDifficulty = "easy";
 let difficults = {
   easy: 50,
@@ -58,9 +63,9 @@ function renderizarElementos(p_dificult) {
         }
         renderizarElementos(newDificult);
       } else {
-        if (acertos > record) {
-          record = acertos;
-          e_record.innerHTML = "Recorde: " + record;
+        if (acertos > record[nowDifficulty]) {
+          record[nowDifficulty] = acertos;
+          e_record.innerHTML = "Recorde: " + record[nowDifficulty];
         }
         renderGameOver(elementDif);
       }
@@ -121,8 +126,7 @@ for (const key of e_difficulty.childNodes) {
     changeDificult(key);
     acertos = 0;
     e_score.innerHTML = "Score: " + acertos;
-    record = 0;
-    e_record.innerHTML = "Recorde: " + record;
+    e_record.innerHTML = "Recorde: " + record[nowDifficulty];
     renderizarElementos(difficults[nowDifficulty]);
   });
 }
